@@ -1,4 +1,4 @@
-# Fairprice Product Web Scraper
+# Fairprice Product Scraper
 
 This project is a web scraper built with Scrapy to collect product SKU data from the Fairprice supermarket website API. It focuses on extracting detailed product information from search results and uses ScrapOps for managing user agents and proxies.
 
