@@ -56,12 +56,18 @@ The scraper outputs data with the following fields:
 
 ## Setup and Usage
 
-1. Ensure you have Scrapy installed: `pip install scrapy`
-2. Install ScrapOps: `pip install scrapops-scrapy-proxy-sdk`
-3. Clone this repository
-4. Navigate to the project directory
-5. Set up your ScrapOps API key in `settings.py`
-6. Run the spider: `scrapy crawl fairpricespider`
+1. Clone this repository and navigate to the project directory:
+   ```bash
+   git clone https://github.com/felixfys/fairprice-scraper.git
+   cd fairprice-scraper
+2. Create and activate a virtual environment:
+   ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+4. Ensure you have Scrapy installed: `pip install scrapy`
+5. Install ScrapOps: `pip install scrapops-scrapy-proxy-sdk`
+6. Set up your ScrapOps API key in `settings.py`
+7. Run the spider: `scrapy crawl fairpricespider`
 
 ## Customization
 
