@@ -20,7 +20,8 @@ class ShengsiongspiderSpider(scrapy.Spider):
         # Set up Selenium with WebDriver Manager
         options = webdriver.ChromeOptions()
         options.add_argument("--disable-gpu")
-        options.add_argument("--window-size=1920,1080")  # Set browser window size
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument("--headless") 
 
         # Initialize ChromeDriver using WebDriver Manager
         self.driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
